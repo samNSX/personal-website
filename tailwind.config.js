@@ -21,6 +21,7 @@ module.exports = {
       boxShadow: {
         "creator-card-img": "0px 34.4728px 57.9769px rgba(0, 0, 0, 0.15)",
         "2xl-light": "0 25px 50px -12px rgba(0, 0, 0, 0.08)",
+        "brutal-blue": "4px 4px 0 0px #173995",
       },
       animation: {
         "slide-x-reveal": "slide-x-reveal 300ms ease-in-out",

@@ -1,6 +1,8 @@
+import Samuel_Lu_Resume from "./assets/Samuel_Lu_Resume.pdf";
+
 const AboutMe = () => {
   return (
-    <div className="flex justify-center sm:items-center pt-24 sm:pt-0 h-screen fadeInBottomSm">
+    <div className="flex justify-center sm:items-center pt-24 sm:pt-0 sm:h-screen fadeInBottomSm">
       <section className="">
         <h2 className="text-5xl font-bold">About Me</h2>
 
@@ -18,6 +20,15 @@ const AboutMe = () => {
           hardware. I hope you find things here on the site, informative and
           interesting.
         </p>
+        <div className="my-8">
+          <a
+            className="border-2 border-black rounded-lg border-solid px-4 py-2 text-center block  transition-all hover:bg-black hover:text-white shadow-brutal-blue"
+            href={Samuel_Lu_Resume}
+            target="_blank"
+          >
+            Resume
+          </a>
+        </div>
         {/* Add image of Gigabyte logo */}
         {/* Add resume!!!! */}
       </section>
