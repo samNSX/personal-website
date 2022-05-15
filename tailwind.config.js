@@ -65,7 +65,7 @@ module.exports = {
   },
   plugins: [
     plugin(function ({ addUtilities }) {
-      const values = ["50", "56", "300", "496"];
+      const values = ["50", "56", "200", "400", "500"];
       const newUtilities = {};
 
       values.forEach((value) => {

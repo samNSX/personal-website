@@ -27,22 +27,22 @@ const Experience = () => {
             lies in PC hardware. I hope you find things here on the site,
             informative and interesting.
           </p>
-          <div className="grid md:grid-cols-[1fr,1fr,1fr]  gap-3 md:h-[500px] drop-shadow-lg grid-cols-1">
-            <img
+          <div className="grid md:grid-cols-[1fr,1fr,1fr] my-[150px] gap-8 md:gap-3 md:h-[500px] lg:w-fit-parent-200px xl:w-fit-parent-500px xl:gap-5  grid-cols-1">
+            <Img
               className="object-cover h-full rounded-lg"
               src={experiencePC1Img}
-            />
-            <img
+            ></Img>
+            <Img
               className="object-cover h-full rounded-lg"
               src={experiencePC2Img}
-            />
-            <img
+            ></Img>
+            <Img
               className="object-cover h-full rounded-lg"
               src={experiencePC3Img}
-            />
+            ></Img>
           </div>
         </div>
-        <div className="my-[200px]">
+        <div className="">
           <p style="    font-size: 18px; line-height: 37px; margin-bottom: 60px;">
             I also have done a marketing project for school. The project is
             about a shoe company called Allbirds and to create a tangible
@@ -59,6 +59,20 @@ const Experience = () => {
           />
         </div>
       </section>
+    </div>
+  );
+};
+
+const Img = ({ className, src }) => {
+  return (
+    <div className={className + " relative"}>
+      <img className="object-cover h-full rounded-lg relative z-1" src={src} />
+      <img
+        className="absolute top-0 left-0 right-0 bottom-0 object-cover h-full rounded-lg"
+        style={`filter: blur(14px);
+        transform: translate(5px, 5px);`}
+        src={src}
+      />
     </div>
   );
 };
