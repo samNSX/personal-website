@@ -58,7 +58,7 @@ function App() {
             {(item) => {
               return (
                 <button
-                  className=" border-solid border-b-2 border-transparent flex-shrink-0 transition-all hover:border-blue-700 font-bold"
+                  className=" border-solid border-b-2 border-transparent flex-shrink-0 transition-all pointer-fine:hover:border-blue-700 font-bold"
                   classList={{
                     "border-blue-700": item.link === activeLink().link,
                   }}

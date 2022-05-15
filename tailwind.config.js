@@ -40,6 +40,7 @@ module.exports = {
         "pointer-fine": {
           raw: "(pointer: fine)",
         },
+        "vh-800": { raw: "(min-height: 800px)" },
       },
       colors: {
         iris: "#6C42C5",
