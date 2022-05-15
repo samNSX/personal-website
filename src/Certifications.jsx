@@ -44,7 +44,7 @@ const Certifications = () => {
               return (
                 <li>
                   <a
-                    class="border-2 border-black rounded-lg border-solid px-4 py-2 block text-center  transition-all hover:bg-black hover:text-white shadow-brutal-blue"
+                    class="border-2 border-black rounded-lg border-solid px-4 py-2 block text-center  transition-all hover:bg-black hover:text-white shadow-brutal-blue hover:drop-shadow-brutal-orange"
                     href={item.pdf}
                     target="_blank"
                   >

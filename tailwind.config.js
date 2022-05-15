@@ -18,6 +18,9 @@ module.exports = {
           "100%": { opacity: "1", transform: "translateX(0%)" },
         },
       },
+      dropShadow: {
+        "brutal-orange": "5px 3px 0px orange",
+      },
       boxShadow: {
         "creator-card-img": "0px 34.4728px 57.9769px rgba(0, 0, 0, 0.15)",
         "2xl-light": "0 25px 50px -12px rgba(0, 0, 0, 0.08)",

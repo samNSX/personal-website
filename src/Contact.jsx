@@ -58,7 +58,7 @@ const Contact = () => {
               return (
                 <li>
                   <div
-                    className="flex h-[80px] items-center gap-4 sm:gap-5 border-2 border-black rounded-lg border-solid px-4 py-2 text-center text-sm sm:text-[18px] shadow-brutal-blue"
+                    className="flex h-[80px] items-center gap-4 sm:gap-5 border-2 border-black rounded-lg border-solid px-4 py-2 text-center text-sm sm:text-[18px] shadow-brutal-blue transition-all hover:bg-black hover:text-white hover:drop-shadow-brutal-orange"
                     onMouseEnter={() => {
                       onMouseEnter(props);
                     }}

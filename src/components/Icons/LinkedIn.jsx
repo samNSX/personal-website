@@ -1,7 +1,7 @@
 const LinkedIn = (props) => {
   return (
     <svg
-      fill={props.active ? "#0B66C2" : "#000"}
+      fill={props.active ? "#007fff" : "#000"}
       style="transition: all 500ms"
       width="100%"
       height="100%"

@@ -26,7 +26,7 @@ const AboutMe = () => {
         </div>
         <div className="my-8">
           <a
-            className="border-2 border-black rounded-lg border-solid px-4 py-2 text-center block  transition-all hover:bg-black hover:text-white shadow-brutal-blue"
+            className="border-2 border-black rounded-lg border-solid px-4 py-2 text-center block  transition-all hover:bg-black hover:text-white shadow-brutal-blue hover:drop-shadow-brutal-orange"
             href={Samuel_Lu_Resume}
             target="_blank"
           >
