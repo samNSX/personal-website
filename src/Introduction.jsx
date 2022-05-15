@@ -1,22 +1,11 @@
 import profileColorfullImg from "./assets/sam_profile.png";
+import IntroProfile from "./components/IntroProfile";
 const Introduction = () => {
   return (
     <div className="flex justify-center sm:items-center pt-24 sm:pt-0 sm:h-screen">
       <div className="px-5">
         <div className="flex justify-center pb-2 blurIn opacity-0 blur-0">
-          <div className="relative">
-            <img
-              className="w-[200px] sm:w-[250px] relative z-1"
-              src={profileColorfullImg}
-              alt=""
-            />
-
-            <img
-              className="absolute top-0 left-0 w-[200px] sm:w-[250px] blur-[23px] translate-x-[12px] translate-y-[24px]"
-              src={profileColorfullImg}
-              alt=""
-            />
-          </div>
+          <IntroProfile></IntroProfile>
         </div>
         <h1 className="font-bold text-[43px] sm:text-6xl leading-[1em] mb-5 lg:whitespace-nowrap text-center">
           <span className="block fadeInLeft">
@@ -24,7 +13,7 @@ const Introduction = () => {
             <span className="hidden sm:inline"> </span>
             <span className="block sm:inline">Samuel Lu</span>
           </span>
-          <div className="text-xl my-3 text-gray-500 fadeInRight">
+          <div className="text-xl my-3 text-gray-500 fadeInRight overflow-hidden sm:overflow-visible">
             GigaByte Technical Support Representative
           </div>
         </h1>
