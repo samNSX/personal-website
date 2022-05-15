@@ -5,8 +5,8 @@ import experienceTrailRunnersImg from "./assets/experience-trail-runners.png";
 
 const Experience = () => {
   return (
-    <>
-      <section className="pt-[170px]">
+    <div className="fadeInBottomSm">
+      <section className="pt-24">
         <h2 className="text-5xl font-bold">Experience</h2>
 
         <div className="">
@@ -59,7 +59,7 @@ const Experience = () => {
           />
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

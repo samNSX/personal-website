@@ -47,7 +47,7 @@ const Contact = () => {
     setActiveItem(null);
   };
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center h-screen fadeInBottomSm">
       <div>
         <h2 className="text-5xl font-bold mb-[50px] text-center">Contact</h2>
         <ul className="flex flex-col gap-5">

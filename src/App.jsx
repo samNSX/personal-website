@@ -42,7 +42,7 @@ function App() {
     <div className="">
       {/* Header */}
       <header
-        className="fixed top-0 left-0 w-full backdrop-blur-lg z-50 bg-[#e7f3ff]/60 "
+        className="fixed top-0 left-0 w-full  has-backdrop-filter:backdrop-blur-lg z-50 has-backdrop-filter:bg-[#e7f3ff]/60 bg-[#e7f3ff]/95"
         style="box-shadow: 0 0 13px 0px #0b487700; transition: box-shadow 300ms;"
         ref={headerEl}
       >
@@ -56,7 +56,7 @@ function App() {
           </div>
         </div> */}
         <div
-          className="absolute top-0 right-0 bottom-0 w-8"
+          className="absolute top-0 right-0 bottom-0 w-8 pointer-events-none"
           style="background: linear-gradient(to left, #e6f3ff 5px, transparent)"
         ></div>
         <div className="flex gap-5 sm:justify-center overflow-auto px-5 pr-8 items-center h-[50px] no-scrollbar">
@@ -75,7 +75,7 @@ function App() {
         </div>
       </header>
 
-      <main className="px-6 max-w-[1000px] mx-auto text-xl">
+      <main className="px-6 max-w-[800px] mx-auto text-xl overflow-hidden">
         {activeLink().component}
         {/* <section className="">
           <div className="px-5">

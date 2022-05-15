@@ -158,3 +158,55 @@ body,
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.fadeInLeft {
+  animation: fadeInLeft 800ms ease-in-out forwards;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeInRight {
+  animation: fadeInRight 800ms ease-in-out forwards;
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeInBottom {
+  animation: fadeInBottom 800ms ease-in-out forwards;
+}
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeInBottomSm {
+  animation: fadeInBottomSm 500ms ease-in-out forwards;
+}
+@keyframes fadeInBottomSm {
+  from {
+    opacity: 0;
+    transform: translateY(5vh);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@key;

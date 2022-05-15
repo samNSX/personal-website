@@ -33,7 +33,7 @@ const Certifications = () => {
     },
   ];
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center h-screen fadeInBottomSm">
       <section>
         <h2 className="text-5xl font-bold mb-[50px] text-center">
           Certifications

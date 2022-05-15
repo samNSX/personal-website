@@ -72,6 +72,22 @@ module.exports = {
 
       addUtilities(newUtilities);
     }),
+    plugin(function ({ addVariant, e, postcss }) {
+      addVariant("has-backdrop-filter", ({ container, separator }) => {
+        const isRule = postcss.atRule({
+          name: "supports",
+          params:
+            "((-webkit-backdrop-filter: none) or (backdrop-filter: none))",
+        });
+        isRule.append(container.nodes);
+        container.append(isRule);
+        isRule.walkRules((rule) => {
+          rule.selector = `.${e(
+            `has-backdrop-filter${separator}${rule.selector.slice(1)}`
+          ).replace(/\\\\/g, "")}`;
+        });
+      });
+    }),
   ],
   // plugins: [require('@savvywombat/tailwindcss-grid-areas')],
 };
