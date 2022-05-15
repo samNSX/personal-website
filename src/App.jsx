@@ -18,6 +18,7 @@ function App() {
     { link: "Certifications", component: Certifications },
     { link: "Contact", component: Contact },
   ];
+  let headerEl;
 
   const [activeLink, setActiveLink] = createSignal(links[0]);
 
@@ -25,12 +26,25 @@ function App() {
     setActiveLink(links.find((_item) => _item.link === item));
   };
 
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (window.scrollY >= 100) {
+        headerEl.style.boxShadow = " 0 0 13px 0px #0b48775e";
+      } else {
+        headerEl.style.boxShadow = " 0 0 13px 0px #0b487700";
+      }
+    },
+    { passive: true }
+  );
+
   return (
     <div className="">
       {/* Header */}
       <header
-        className="fixed top-0 left-0 w-full backdrop-blur-lg z-50 bg-[#e7f3ff]/60"
-        style="box-shadow: 0 0 13px 0px #0b48775e"
+        className="fixed top-0 left-0 w-full backdrop-blur-lg z-50 bg-[#e7f3ff]/60 "
+        style="box-shadow: 0 0 13px 0px #0b487700; transition: box-shadow 300ms;"
+        ref={headerEl}
       >
         {/* <div className="flex justify-between items-center h-[100px] max-w-[1000px] mx-auto px-5">
           <div>
@@ -41,7 +55,11 @@ function App() {
             </span>
           </div>
         </div> */}
-        <div className="flex gap-5 sm:justify-center overflow-auto px-5 items-center h-[50px]">
+        <div
+          className="absolute top-0 right-0 bottom-0 w-8"
+          style="background: linear-gradient(to left, #e6f3ff 5px, transparent)"
+        ></div>
+        <div className="flex gap-5 sm:justify-center overflow-auto px-5 pr-8 items-center h-[50px] no-scrollbar">
           <For each={links}>
             {(item) => {
               return (
