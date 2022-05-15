@@ -8,19 +8,18 @@ import AboutMe from "./AboutMe";
 import { createSignal } from "solid-js";
 import Experience from "./Experience";
 import Certifications from "./Certifications";
+import Introduction from "./Introduction";
 
 function App() {
   const links = [
-    { link: "about-me", component: AboutMe },
-    { link: "experience", component: Experience },
-    { link: "certifications", component: Certifications },
-    { link: "contact", component: Contact },
+    { link: "Introduction", component: Introduction }, // main
+    { link: "About Me", component: AboutMe },
+    { link: "Experience", component: Experience },
+    { link: "Certifications", component: Certifications },
+    { link: "Contact", component: Contact },
   ];
 
-  const [activeLink, setActiveLink] = createSignal({
-    link: "certifications",
-    component: Certifications,
-  });
+  const [activeLink, setActiveLink] = createSignal(links[0]);
 
   const onClick = (item) => {
     setActiveLink(links.find((_item) => _item.link === item));
@@ -29,7 +28,7 @@ function App() {
   return (
     <div className="">
       {/* Header */}
-      <header className="fixed top-0 left-0 w-full backdrop-blur-lg z-50 bg-white/50">
+      <header className="fixed top-0 left-0 w-full backdrop-blur-lg z-50 bg-[#e7f3ff]/60">
         {/* <div className="flex justify-between items-center h-[100px] max-w-[1000px] mx-auto px-5">
           <div>
             <span className="text-xl font-semibold">Sam Lu</span> /{" "}
@@ -39,14 +38,23 @@ function App() {
             </span>
           </div>
         </div> */}
-        <For each={links}>
-          {(item) => {
-            return <div onClick={() => onClick(item.link)}>{item.link}</div>;
-          }}
-        </For>
+        <div className="flex gap-5 justify-center items-center h-[50px]">
+          <For each={links}>
+            {(item) => {
+              return (
+                <button
+                  className=" border-solid border-b-2 border-blue-200"
+                  onClick={() => onClick(item.link)}
+                >
+                  {item.link}
+                </button>
+              );
+            }}
+          </For>
+        </div>
       </header>
 
-      <main className="mt-[200px] max-w-[1000px] mx-auto px-6">
+      <main className="px-6">
         {activeLink().component}
         {/* <section className="">
           <div className="px-5">

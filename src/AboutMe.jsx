@@ -16,6 +16,8 @@ const AboutMe = () => {
         well. But for now, my forte lies in PC hardware. I hope you find things
         here on the site, informative and interesting.
       </p>
+      {/* Add image of Gigabyte logo */}
+      {/* Add resume!!!! */}
     </section>
   );
 };

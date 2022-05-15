@@ -33,28 +33,30 @@ const Certifications = () => {
     },
   ];
   return (
-    <section>
-      <h2 className="text-5xl font-bold mb-[50px] text-center">
-        Certifications
-      </h2>
-      <ul className="flex max-w-[400px] mx-auto flex-col gap-3">
-        <For each={list}>
-          {(item) => {
-            return (
-              <li>
-                <a
-                  class="border-2 border-black rounded-lg border-solid px-4 py-2 block text-center  transition-all hover:bg-black hover:text-white"
-                  href={item.pdf}
-                  target="_blank"
-                >
-                  {item.name}
-                </a>
-              </li>
-            );
-          }}
-        </For>
-      </ul>
-    </section>
+    <div className="flex justify-center items-center h-screen">
+      <section>
+        <h2 className="text-5xl font-bold mb-[50px] text-center">
+          Certifications
+        </h2>
+        <ul className="flex max-w-[400px] mx-auto flex-col gap-3">
+          <For each={list}>
+            {(item) => {
+              return (
+                <li>
+                  <a
+                    class="border-2 border-black rounded-lg border-solid px-4 py-2 block text-center  transition-all hover:bg-black hover:text-white"
+                    href={item.pdf}
+                    target="_blank"
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              );
+            }}
+          </For>
+        </ul>
+      </section>
+    </div>
   );
 };
 
