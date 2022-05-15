@@ -1,4 +1,5 @@
 import Samuel_Lu_Resume from "./assets/Samuel_Lu_Resume.pdf";
+import gigabyteImg from "./assets/Gigabyte.png";
 
 const AboutMe = () => {
   return (
@@ -20,6 +21,9 @@ const AboutMe = () => {
           hardware. I hope you find things here on the site, informative and
           interesting.
         </p>
+        <div className="my-8 flex justify-center items-center">
+          <img className="h-[100px] object-contain" src={gigabyteImg} alt="" />
+        </div>
         <div className="my-8">
           <a
             className="border-2 border-black rounded-lg border-solid px-4 py-2 text-center block  transition-all hover:bg-black hover:text-white shadow-brutal-blue"
