@@ -6,7 +6,7 @@ import experienceTrailRunnersImg from "./assets/experience-trail-runners.png";
 const Experience = () => {
   return (
     <>
-      <section className="">
+      <section className="pt-[170px]">
         <h2 className="text-5xl font-bold">Experience</h2>
 
         <div className="">

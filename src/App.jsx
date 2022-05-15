@@ -2,7 +2,7 @@ import "./index.css";
 import profileImg from "./assets/profile-picture.webp";
 import profileColorfullImg from "./assets/sam_profile.png";
 import profileNoBGImg from "./assets/profile-nobg.webp";
-import Contact from "./components/Contact";
+import Contact from "./Contact";
 import AboutMe from "./AboutMe";
 
 import { createSignal } from "solid-js";
@@ -54,7 +54,7 @@ function App() {
         </div>
       </header>
 
-      <main className="px-6">
+      <main className="px-6 max-w-[1000px] mx-auto text-xl">
         {activeLink().component}
         {/* <section className="">
           <div className="px-5">

@@ -9,7 +9,7 @@ const Introduction = () => {
           </div>
         </h1>
         <div className="flex flex-col items-center justify-center">
-          <p className="text-xl">
+          <p className="text-xl leading-[37px]">
             To the person reading this, my name is Samuel Lu and I would like
             thank you for taking time out of your day to arrive at my page. Here
             you can learn more about me, see what projects I have been a part
