@@ -59,6 +59,10 @@ function App() {
           className="absolute top-0 right-0 bottom-0 w-8 pointer-events-none"
           style="background: linear-gradient(to left, #e6f3ff 5px, transparent)"
         ></div>
+        <div
+          className="absolute top-0 left-0 bottom-0 w-5 pointer-events-none"
+          style="background: linear-gradient(to right, #e6f3ff 5px, transparent)"
+        ></div>
         <div className="flex gap-5 sm:justify-center overflow-auto px-5 pr-8 items-center h-[50px] no-scrollbar">
           <For each={links}>
             {(item) => {
