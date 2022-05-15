@@ -3,8 +3,8 @@ const LinkedIn = (props) => {
     <svg
       fill={props.active ? "#0B66C2" : "#000"}
       style="transition: all 500ms"
-      width="52"
-      height="52"
+      width="100%"
+      height="100%"
       version="1.1"
       id="lni_lni-linkedin-original"
       xmlns="http://www.w3.org/2000/svg"

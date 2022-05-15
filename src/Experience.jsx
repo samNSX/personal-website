@@ -50,8 +50,8 @@ const Experience = () => {
             to market it towards the Gen Z population in the San Diego area. I
             did research on the age demographic that is Gen Z, the population of
             that demographic in the San Diego area, checked which gender the
-            Trail Runner SWT, and decided the best course of action in regards
-            to marketing.
+            Trail Runner SWT is popular amongst, and decided the best course of
+            action in regards to marketing.
           </p>
           <img
             className="object-cover h-full rounded-lg"

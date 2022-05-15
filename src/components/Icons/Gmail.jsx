@@ -2,8 +2,8 @@ const Gmail = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="52"
-      height="52"
+      width="100%"
+      height="100%"
       viewBox="52 42 88 66"
     >
       <path

@@ -58,7 +58,7 @@ const Contact = () => {
               return (
                 <li>
                   <div
-                    className="flex h-[80px] items-center gap-5 border-2 border-black rounded-lg border-solid px-4 py-2 text-center"
+                    className="flex h-[80px] items-center gap-4 sm:gap-5 border-2 border-black rounded-lg border-solid px-4 py-2 text-center text-sm sm:text-[18px]"
                     onMouseEnter={() => {
                       onMouseEnter(props);
                     }}
@@ -67,7 +67,7 @@ const Contact = () => {
                     }}
                   >
                     <a
-                      className="cursor-pointer"
+                      className="cursor-pointer w-[30px] h-[30px] sm:w-[50px] sm:h-[50px]"
                       href={href}
                       target={targetNewTab ? "_blank" : undefined}
                     >

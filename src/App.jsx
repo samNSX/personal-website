@@ -28,7 +28,10 @@ function App() {
   return (
     <div className="">
       {/* Header */}
-      <header className="fixed top-0 left-0 w-full backdrop-blur-lg z-50 bg-[#e7f3ff]/60">
+      <header
+        className="fixed top-0 left-0 w-full backdrop-blur-lg z-50 bg-[#e7f3ff]/60"
+        style="box-shadow: 0 0 13px 0px #0b48775e"
+      >
         {/* <div className="flex justify-between items-center h-[100px] max-w-[1000px] mx-auto px-5">
           <div>
             <span className="text-xl font-semibold">Sam Lu</span> /{" "}
@@ -38,12 +41,12 @@ function App() {
             </span>
           </div>
         </div> */}
-        <div className="flex gap-5 justify-center items-center h-[50px]">
+        <div className="flex gap-5 sm:justify-center overflow-auto px-5 items-center h-[50px]">
           <For each={links}>
             {(item) => {
               return (
                 <button
-                  className=" border-solid border-b-2 border-blue-200"
+                  className=" border-solid border-b-2 border-transparent flex-shrink-0 transition-all hover:border-blue-700 font-bold"
                   onClick={() => onClick(item.link)}
                 >
                   {item.link}

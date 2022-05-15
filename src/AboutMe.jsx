@@ -1,6 +1,6 @@
 const AboutMe = () => {
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center sm:items-center pt-24 sm:pt-0 h-screen">
       <section className="">
         <h2 className="text-5xl font-bold">About Me</h2>
 

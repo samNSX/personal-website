@@ -1,6 +1,6 @@
 const Introduction = () => {
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center sm:items-center pt-24 sm:pt-0 h-screen">
       <div className="px-5">
         <h1 className="font-bold text-6xl mb-5 lg:whitespace-nowrap text-center">
           Hello, I'm Samuel Lu
