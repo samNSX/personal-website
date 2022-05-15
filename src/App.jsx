@@ -23,6 +23,7 @@ function App() {
   const [activeLink, setActiveLink] = createSignal(links[0]);
 
   const onClick = (item) => {
+    window.scrollTo({ top: 0 });
     setActiveLink(links.find((_item) => _item.link === item));
   };
 
@@ -41,7 +42,7 @@ function App() {
   return (
     <div className="">
       <header
-        className="fixed top-0 left-0 w-full  has-backdrop-filter:backdrop-blur-lg z-50 has-backdrop-filter:bg-[#e7f3ff]/60 bg-[#e7f3ff]/95"
+        className="fixed top-0 left-0 right-0 has-backdrop-filter:backdrop-blur-lg z-50 has-backdrop-filter:bg-[#e7f3ff]/60 bg-[#e7f3ff]/95"
         style="box-shadow: 0 0 13px 0px #0b487700; transition: box-shadow 300ms;"
         ref={headerEl}
       >
@@ -53,7 +54,8 @@ function App() {
           className="absolute top-0 left-0 bottom-0 w-5 pointer-events-none"
           style="background: linear-gradient(to right, #e6f3ff 5px, transparent)"
         ></div>
-        <div className="flex gap-5 sm:justify-center overflow-auto px-5 pr-8 items-center h-[50px] no-scrollbar">
+
+        <div className="flex gap-5 w-full sm:justify-center overflow-auto px-5 pr-8 items-center h-[50px] no-scrollbar">
           <For each={links}>
             {(item) => {
               return (
@@ -72,7 +74,7 @@ function App() {
         </div>
       </header>
 
-      <main className="px-6 max-w-[800px] mx-auto text-xl">
+      <main className="px-6 max-w-[800px] mx-auto text-xl overflow-hidden sm:overflow-visible">
         {activeLink().component}
       </main>
       {/* <footer className="mt-auto p-5">
