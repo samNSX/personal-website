@@ -18,8 +18,7 @@ const AboutMe = () => {
           Because I have been in the tech industry since I was 17, I mainly want
           to stay in the realm of PC hardware, however; I am interested in the
           motorsport industry as well. But for now, my forte lies in PC
-          hardware. I hope you find things here on the site, informative and
-          interesting.
+          hardware.
         </p>
         <div className="my-8 flex justify-center items-center">
           <img className="h-[100px] object-contain" src={gigabyteImg} alt="" />

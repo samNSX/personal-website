@@ -25,6 +25,10 @@ const Introduction = () => {
             of, my experiences, any certificates or licenses I obtained, and
             finally contact information.
           </p>
+          <p>
+            I hope you find things here on the site, informative and
+            interesting.
+          </p>
         </div>
       </div>
     </div>
