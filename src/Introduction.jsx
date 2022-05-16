@@ -17,7 +17,7 @@ const Introduction = () => {
             GigaByte Technical Support Representative
           </div>
         </h1>
-        <div className="flex flex-col items-center justify-center fadeInBottom my-8">
+        <div className="fadeInBottom my-8">
           <p className="text-xl leading-[37px]">
             To the person reading this, my name is Samuel Lu and I would like
             thank you for taking time out of your day to arrive at my page. Here
@@ -25,7 +25,8 @@ const Introduction = () => {
             of, my experiences, any certificates or licenses I obtained, and
             finally contact information.
           </p>
-          <p>
+          <br />
+          <p className="text-xl leading-[37px]">
             I hope you find things here on the site, informative and
             interesting.
           </p>
