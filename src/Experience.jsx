@@ -66,7 +66,10 @@ const Experience = () => {
 const Img = ({ className, src }) => {
   return (
     <div className={className + " relative"}>
-      <img className="object-cover h-full rounded-lg relative z-1" src={src} />
+      <img
+        className="object-cover h-full w-full md:w-auto rounded-lg relative z-1"
+        src={src}
+      />
       <img
         className="absolute top-0 left-0 right-0 bottom-0 object-cover h-full rounded-lg"
         style={`filter: blur(14px);
