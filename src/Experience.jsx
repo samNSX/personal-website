@@ -29,15 +29,15 @@ const Experience = () => {
           </p>
           <div className="grid md:grid-cols-[1fr,1fr,1fr] my-[150px] gap-8 md:gap-3 md:h-[500px] lg:w-fit-parent-200px xl:w-fit-parent-500px xl:gap-5  grid-cols-1">
             <Img
-              className="object-cover h-full rounded-lg"
+              className="h-[inherit] rounded-lg"
               src={experiencePC1Img}
             ></Img>
             <Img
-              className="object-cover h-full rounded-lg"
+              className="h-[inherit] rounded-lg"
               src={experiencePC2Img}
             ></Img>
             <Img
-              className="object-cover h-full rounded-lg"
+              className="h-[inherit] rounded-lg"
               src={experiencePC3Img}
             ></Img>
           </div>
