@@ -54,7 +54,7 @@ const Experience = () => {
             action in regards to marketing.
           </p>
           <img
-            className="object-cover h-full rounded-lg"
+            className="object-cover h-[inherit] rounded-lg"
             src={experienceTrailRunnersImg}
           />
         </div>
